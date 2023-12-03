@@ -1,0 +1,100 @@
+/* <img src="https://i.pinimg.com/originals/e9/88/40/e9884007598e2e329d53bb448ede4084.png"
+        alt=""/>
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png"alt=""/> */
+
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("http://cdn.shopify.com/s/files/1/0607/5056/1539/articles/netflix.jpg?v=1669877376")
+    center no-repeat;
+    background-size: cover;
+}
+.loginScreen__logo{
+position:fixed;
+left: 0;
+width: 150px;
+object-fit: contain;
+padding-left: 20px;
+}
+.loginScreen__gradient{
+    width: 100%;
+    z-index:1;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0)60%,
+        rgba(0,0,0,0.8)100%
+    );
+}
+.loginScreen__button{
+    position:fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.loginScreen__body>h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    text-align:center;
+    
+    
+}
+.loginScreen__body>h2{
+    font-size:2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+    text-align:center;
+    
+    
+}
+.loginScreen__body>h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+  
+}
+.loginScreen__body{
+   
+    position: fixed;
+    top:30%;
+    text-align: center;
+    z-index:1;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    padding: 20px;
+    left:0;
+    right: 0;
+}
+.loginScreen__input>form>input{
+    padding: 10px;
+    outline-width: 0;
+    height:30px;
+    width: 30%;
+    border: node;
+    max-width: 600px;
+    
+}
+.loginScreen__input{
+    margin: 20px;
+}
+
+.loginScreen__getstarted{
+    padding:16px 20px ;
+    font-size:1rem;
+    color:#fff;
+    background-color:#e50914;
+   
+    border:none;
+    font-weight: 600;
+    cursor: pointer;
+}
