@@ -5,7 +5,7 @@ import "./LoginScreen.css"
 import SignUpScreen from './SignUpScreen';
 export default function LoginScreen() {
  
-const h1p="Unlimited films, TV programmes and more."
+const h1p="U nlimited films, TV programmes and more."
 
 const [singIn,setSignIn]=useState(false)
 
