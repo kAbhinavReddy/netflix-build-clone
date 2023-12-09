@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Banner.css"
 import axios from './axios'
 import requests from './Requests'
-
+import TypingEffect from './screens/TypingEffect'
 function Banner() {
     
     const [movie, setMovie]=useState([])
@@ -26,7 +26,7 @@ fetchData();
     function truncate(string, n){
         if(string.length>n)
            return string.substr(0,n-1)+"..."
-        return string
+        return string+".."
 
     }
 
@@ -42,12 +42,13 @@ fetchData();
 <div className="banner__contents">
     <h1 className="banner__title">
         {movie?.title|| movie?.name||movie?.original_name }
+        
     </h1>
     <div className="banner__buttons">
         <button className="banner__button">play</button>
         <button className="banner__button">My List</button>
     </div>
-    <h2 className="banner__description">{truncate(`${movie?.overview}`,150)}</h2>
+    <h2 className="banner__description"><TypingEffect text= {truncate(`${movie?.overview}`,150)}speed={80} /></h2>
     
 </div>
 <div className="banner--fadeButton"/>

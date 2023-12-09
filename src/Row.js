@@ -33,6 +33,7 @@ function Row({title,fetchUrl,isLargeRow=false}) {
      }
      </div>
      
+     
     </div>
     
   )

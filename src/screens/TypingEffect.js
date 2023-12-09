@@ -4,7 +4,9 @@ const TypingEffect = (props) => {
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
-    const textToType = props.text;
+    const x=props.text
+    const y= x.substr(0,1)+" "+x.substr(1,x.length)
+    const textToType = y
 
     let currentCharacterIndex = 0;
 
